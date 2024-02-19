@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## TODO:
+
+- Fix spotify token refresh
+- Possibly get google refresh token, rather than just the access token
+
 ## Getting Started
 
 First, run the development server:
