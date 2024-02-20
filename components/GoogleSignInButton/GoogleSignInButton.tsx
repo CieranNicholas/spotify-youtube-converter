@@ -1,9 +1,5 @@
-"use client";
-
 import React from "react";
-import { FaYoutube } from "react-icons/fa";
-import { twMerge } from "tailwind-merge";
-import { motion } from "framer-motion";
+import GoogleSignInButtonClient from "./GoogleSignInButtonClient";
 
 interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {}
 
@@ -20,19 +16,10 @@ const GoogleSignInButton: React.FC<LinkProps> = ({ className }) => {
     process.env.GOOGLE_REDIRECT_URI
   }&client_id=${process.env.GOOGLE_CLIENT_ID}&prompt=consent`;
   return (
-    <motion.a
-      href={googleAuthURL}
-      className={twMerge(
-        "bg-youtube p-4 rounded flex items-center justify-start gap-2",
-        className
-      )}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 0.2, bounce: 0.5 }}
-    >
-      <FaYoutube />
-      <p>Sign In</p>
-    </motion.a>
+    <GoogleSignInButtonClient
+      className={className}
+      googleAuthURL={googleAuthURL}
+    />
   );
 };
 

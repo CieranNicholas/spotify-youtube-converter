@@ -1,5 +1,5 @@
-import GoogleSignInButton from "@/components/GoogleSignInButton";
-import SpotifySignInButton from "@/components/SpotifySignInButton";
+import GoogleSignInButton from "@/components/GoogleSignInButton/GoogleSignInButton";
+import SpotifySignInButton from "@/components/SpotifySignInButton/SpotifySignInButton";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { getGoogleSession, getSpotifySession } from "@/lib/auth-lib";
 import { motion } from "framer-motion";

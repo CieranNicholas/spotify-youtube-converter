@@ -6,7 +6,7 @@ import { IPlaylistData, ISpotifyTrack, ISpotifyTrackItem } from "@/types";
 import { formatTime } from "@/lib/helpers";
 import TrackInfo from "./components/track-info";
 import ConvertBtn from "./components/convert-btn";
-import GoogleSignInButton from "@/components/GoogleSignInButton";
+import GoogleSignInButton from "@/components/GoogleSignInButton/GoogleSignInButton";
 import ToastTrigger from "../components/toast-trigger";
 
 interface PlaylistInfoProps {
